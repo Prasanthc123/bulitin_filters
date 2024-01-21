@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>filters</h1>
+        <h2>{{data}}</h2>
+        {{data|lower}}<br><br>
+        {{data|upper}}<br><br>
+        {{data|capfirst}}<br><br>
+        {{data|title}}<br><br>
+        {{data|length}}<br><br>
+        {{data|truncatechars:'4'}}<br><br>
+        {{data|truncatewords:'2'}}<br><br>
+        {{data|length}}<br><br>
+        {{data|slice:'5'}} <br><br>
+
+        <h2>Now the time is {{date}}</h2>
+        {{date|date:'Y'}}<br><br>
+        {{date|date:'Y D A'}}<br><br>
+        {{date|date:'y'}}<br><br>
+        {{date|date:'j'}}<br><br>
+
+        <h2> i have {{d}} dog{{d|pluralize}}</h2><br>
+         i have {{c}} cat{{c|pluralize}}<br>
+         there are {{m}} mango{{m|pluralize:'es'}}<br>
+         this {{d}} dog{{d|pluralize}} {{d|pluralize:'is,are'}} mine
+        
+
+    </center>
+</body>
+</html>
